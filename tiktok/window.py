@@ -8,7 +8,6 @@ def create_users(country):
     numero = entrada.get()
     try:
         numero = int(numero)
-        print(country)
         #text box
         Label(text="").pack()
         btn1.config(state=DISABLED)
@@ -60,9 +59,6 @@ Label(text="Users quantity").pack()
 
 entrada = Entry(window, validate="key", validatecommand=(validacion, '%S'))
 entrada.pack()
-print(f"test: {opcion_seleccionada.get()}")
-print(type(opcion_seleccionada.get()))
-
 
 Label(text="").pack()
 
